@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CoffeeComposition, DietaryIndicators } from "@/components/menu-indicators";
-import logo from "@/assets/logo.jpg.asset.json";
 import logoCutout from "@/assets/logo-cutout.png";
 import { categories, formatPrice, GOOGLE_REVIEW_URL, hiRes, type Product } from "@/data/menu";
 
@@ -125,7 +124,7 @@ function Index() {
       </main>
 
       <footer className="bg-espresso px-6 pb-14 pt-14 text-center text-primary-foreground">
-        <img src={logo.url} alt="" className="mx-auto h-16 w-16 rounded-full object-cover opacity-90" />
+        <img src={logoCutout} alt="Coffee House Specialty" width={1160} height={960} className="mx-auto h-auto w-28 object-contain" />
         <p className="mt-6 font-serif text-2xl italic">¿Te gustó la experiencia?</p>
         <Button asChild variant="ghost" className="mx-auto mt-6 h-auto w-fit flex-col gap-2 rounded-lg border border-accent/40 bg-primary-foreground/5 px-8 py-5 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground">
         <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noopener noreferrer">
