@@ -1,0 +1,2 @@
+- Keep menu grouping and illustrative coffee recipes in the menu data module; presentation components consume them so section and recipe changes stay centralized.
+- Dietary icons represent unverified statuses until explicitly supplied suitability data is available; ingredients alone cannot establish celiac safety.
