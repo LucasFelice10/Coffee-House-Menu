@@ -12,7 +12,7 @@ const isPages = process.env.GITHUB_PAGES === "true";
 const base = isPages ? "/Coffee-House-Menu/" : "/";
 
 export default defineConfig({
-  ...(isPages ? { nitro: { preset: "github-pages" } } : {}),
+  ...(isPages ? { nitro: false } : {}),
   vite: {
     base,
     // Prebundle the menu dependencies together with React before the first render.
